@@ -744,6 +744,7 @@ ul.row {
 
 /* Post
     ============================= */
+
 .post {
     display: flex;
 }
@@ -756,6 +757,7 @@ ul.row {
     order: -1;
     min-width: 20%;
 }
+
 /* Post Meta
     ============================= */
 .post-meta-list {
@@ -768,17 +770,21 @@ ul.row {
     text-transform: uppercase;
     display: block;
 }
+
 .post-meta-list [class*='post-meta-'] {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid var(--color-light-grey);
 }
-.post-meta-list :last-child [class*='post-meta'] {
+
+.post-meta-list [class*='post-meta']:last-child {
     border: none;
     margin-bottom: 3rem;
 }
+
 /* Tag list
     ============================= */
+
 .tag-list {
     padding: 0;
     list-style: none;
@@ -786,9 +792,9 @@ ul.row {
 .tag-list li {
     display: inline;
 }
-.tag-list::after li {
+.tag-list li::after {
     content: ", ";
 }
-.tag-list::after :last-child li {
+.tag-list li:last-child::after {
     content: '';
 }
