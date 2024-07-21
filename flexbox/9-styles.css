@@ -240,6 +240,7 @@ template {
 
     /** HEADER **/
     --header-padding: 4rem 0 0;
+
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
 
@@ -360,12 +361,15 @@ a:active {
 /* Grid
       ============================= */
 
+.row {
+    display: flex;
+}
+
 ul.row {
     margin: -1rem;
     padding: 0;
     list-style: none;
 }
-
 
 [class*='col-'] {
     margin: 1rem;
@@ -379,20 +383,15 @@ ul.row {
     width: calc((100% / 2) - 2rem);
 }
 
-.row {
-    display: flex;
-}
-
-
 /* Navbar
       ============================= */
 
 .nav {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
-    display: flex;
 }
 
 .nav .nav-item {
@@ -434,13 +433,13 @@ ul.row {
 }
 
 /* Header
-    ============================= */
+      ============================= */
 
 .header {
     padding: var(--header-padding);
     position: relative;
     z-index: 3;
-    background: transparent;
+    background: transparent !important;
 }
 
 .header-container {
@@ -551,17 +550,23 @@ ul.row {
     min-height: 50vh;
 }
 
-/* Section Latest news ============================= */
+
+/* Section Latest news
+      ============================= */
+
 .section-latest-news .row {
     flex-direction: row-reverse;
 }
 
-/* Section SERVICES ============================= */
+/* Section SERVICES
+      ============================= */
+
 .section-services .row {
     flex-wrap: wrap;
 }
 
-/* Section ABOUT US =================*/
+/* Section ABOUT US
+      ============================= */
 
 .section-about-us [class*='col-'] {
     align-self: center;
