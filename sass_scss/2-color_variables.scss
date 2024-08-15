@@ -1,7 +1,7 @@
 $text_color: #3D3D3D;
 $background-color:#6D6D6D;
 body {
-    color: $text_color $background-color;
+    color: $text_color, $background-color;
 }
 p {
     color: $text_color;
