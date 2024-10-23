@@ -1,5 +1,5 @@
-@for ($H*: 1; $H* <= 5; $H*: $H* + 1) {
-    .h1 {
-        font
+@for $value from 1 through 5 {
+    h#{$value} {
+        font-size: $value + px;
     }
 }
